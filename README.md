@@ -182,7 +182,7 @@ Run your daemon with `--print-genesis-tx` argument. It will print out the genesi
 
 Example:
 ```
-furiouscoind --print-genesis-tx
+engcoind --print-genesis-tx
 ```
 
 
