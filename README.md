@@ -24,14 +24,14 @@ Name must be specified twice:
 
 Example: 
 ```
-const char CRYPTONOTE_NAME[] = "furiouscoin";
+const char CRYPTONOTE_NAME[] = "engcoin";
 ```
 
 **2. in src/CMakeList.txt file** - set_property(TARGET daemon PROPERTY OUTPUT_NAME "YOURCOINNAME**d**")
 
 Example: 
 ```
-set_property(TARGET daemon PROPERTY OUTPUT_NAME "furiouscoind")
+set_property(TARGET daemon PROPERTY OUTPUT_NAME "engcoind")
 ```
 
 **Note:** You should also change a repository name.
@@ -56,7 +56,7 @@ Be default CryptoNote provides emission formula with slight decrease of block re
 
 Example:
 ```
-const unsigned EMISSION_SPEED_FACTOR = 18;
+const unsigned EMISSION_SPEED_FACTOR = 21;
 ```
 
 **3. Difficulty target** (src/CryptoNoteConfig.h)
@@ -73,7 +73,7 @@ For most coins difficulty target is 60 or 120 seconds.
 
 Example:
 ```
-const uint64_t DIFFICULTY_TARGET = 120;
+const uint64_t DIFFICULTY_TARGET = 90;
 ```
 
 **4. Block reward formula**
@@ -160,7 +160,7 @@ You may choose a letter (in some cases several letters) all the coin's public ad
 
 Example:
 ```
-const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0xe9; // addresses start with "f"
+const uint64_t CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0xe3; // addresses start with "e"
 ```
 
 
